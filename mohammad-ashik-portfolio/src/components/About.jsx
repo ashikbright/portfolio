@@ -14,6 +14,7 @@ import {
   FaRocket,
   FaDownload
 } from 'react-icons/fa';
+import resume from '../assets/mohammad_ashik.pdf';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -163,7 +164,8 @@ const About = () => {
                 Let's Work Together
               </motion.a>
               <motion.a
-                href="#" // Replace with your resume download link
+                href={resume}
+                download="Mohammad_Ashik_Resume.pdf"
                 className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200 text-center flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
